@@ -3,18 +3,6 @@ body {
     font-family: Gill Sans, sans-serif;
 }
 
-p {
-    color: darkseagreen;
-}
-
-h3 {
-    color: darkseagreen;
-}
-
-h1 {
-    color: darkseagreen;
-}
-
-li {
-    color: darkseagreen;
+p, h1, h2, h3, h4, h5, li, ol, a {
+    color: whitesmoke;
 }
