@@ -12,6 +12,11 @@ h5,
 li,
 ol,
 a,
-ul {
+ul,
+td{
     color: whitesmoke;
+}
+
+th {
+    color: whitesmoke
 }
