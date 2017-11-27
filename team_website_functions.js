@@ -11,7 +11,7 @@ function dateMessage(){
 
     var s = new Date();
     var month = s.getMonth(); //gets the month number
-    document.write(month, ""); //displays month
+    document.write(month, " "); //displays month
     var r = new Date();
     var dayNumber = r.getDate(); //gets day number
     document.write(dayNumber, "th"); //displays day
