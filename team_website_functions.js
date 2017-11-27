@@ -1,4 +1,4 @@
-function RandomGreeting() {
+function randomGreeting() {
 
 }
 
