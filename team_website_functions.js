@@ -1,8 +1,8 @@
-function RandomGreeting(){
+function RandomGreeting() {
 
 }
 
-function dateMessage(){
+function dateMessage() {
     var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; // gets day of the week from here
     var n = new Date();
     var weekday = n.getDay();
@@ -17,6 +17,6 @@ function dateMessage(){
     document.write(dayNumber, "th"); //displays day
 }
 
-function BirthdayCountDown(){
+function BirthdayCountDown() {
 
 }
