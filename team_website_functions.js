@@ -28,6 +28,27 @@ function dateMessage() {
     document.write(dayNumber, ending); //displays day
 }
 
-function birthdayCountDown() {
+function birthdayCountDown(birthdate) {
+
+    var today = new Date();
+    var birthday = new Date(birthdate);
+    var currenttime = today.getTime();
+    var birthtime = birthday.getTime();
+
+    if ((birthtime - currenttime) < 0) {
+
+
+        birthday.setFullYear(today.getFullYear());
+
+        if ((birthday.getTime() - today.getTime()) < 0) {
+            birthday.setFullYear(birthday.getFullYear() + 1);
+        }
+
+    }
+
+    var daysuntil = Math.floor((birthday.getTime() / 86400000) - (today.getTime() / 86400000));
+
+
+    document.write(daysuntil);
 
 }
