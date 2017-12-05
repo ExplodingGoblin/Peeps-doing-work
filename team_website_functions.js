@@ -1,4 +1,26 @@
 function greeting() {
+    var hour = d.getHours();
+    var day = d.getDay();
+    if (hour < 10) {
+        if(day == 0 || day == 6) {
+            return "Go back to sleep, it's the weekend!";
+        } else if (day == 1) {
+            return "Ugh, it's Monday monring!";
+        } else {
+            return "Good morning!";
+        }
+    if (hour > 10 && hour < 16) {
+        if (day == 0 || day == 6) {
+            return "Hope you are having a great weekend!";
+        } else {
+            return "Good day!";
+        }
+    }
+    if ( hour > 16) {
+        if (day == 0) {
+
+        }
+    }
 
 }
 
