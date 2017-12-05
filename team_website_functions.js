@@ -28,25 +28,25 @@ function dateMessage() {
     document.write(dayNumber, ending); //displays day
 }
 
-function birthdayCountDown(bdate) {
+function birthdayCountDown(birthdate) {
 
     var today = new Date();
-    var bday = new Date(bdate);
+    var birthday = new Date(birthdate);
     var currenttime = today.getTime();
-    var btime = bday.getTime();
+    var birthtime = birthday.getTime();
 
-    if ((btime - currenttime) < 0) {
+    if ((birthtime - currenttime) < 0) {
 
 
-        bday.setFullYear(today.getFullYear());
+        birthday.setFullYear(today.getFullYear());
 
-        if ((bday.getTime() - today.getTime()) < 0) {
-            bday.setFullYear(bday.getFullYear() + 1);
+        if ((birthday.getTime() - today.getTime()) < 0) {
+            birthday.setFullYear(birthday.getFullYear() + 1);
         }
 
     }
 
-    var daysuntil = Math.floor((bday.getTime() / 86400000) - (today.getTime() / 86400000));
+    var daysuntil = Math.floor((birthday.getTime() / 86400000) - (today.getTime() / 86400000));
 
 
     document.write(daysuntil);
