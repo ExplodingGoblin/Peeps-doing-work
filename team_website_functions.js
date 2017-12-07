@@ -3,7 +3,7 @@ function greeting() {
     var hour = d.getHours();
     var day = d.getDay();
     if (hour < 10) {
-        if(day == 0 || day == 6) {
+        if (day == 0 || day == 6) {
             document.write("Go back to sleep, it's the weekend!");
         } else if (day == 1) {
             document.write("Ugh, it's Monday monring!");
@@ -18,7 +18,7 @@ function greeting() {
             document.write("Good day!");
         }
     }
-    if ( hour > 16) {
+    if (hour > 16) {
         if (day == 0) {
             document.write("Enjoy your evening...tomorrow is Monday!");
         } else {
@@ -53,28 +53,28 @@ function dateMessage() {
     document.write(dayNumber, ending); //displays day
 }
 
-    function birthdayCountDown(bdate) {
+function birthdayCountDown(bdate) {
 
-        var today = new Date();
-        var bday = new Date(bdate);
-        var currenttime = today.getTime();
-        var btime = bday.getTime();
+    var today = new Date();
+    var bday = new Date(bdate);
+    var currenttime = today.getTime();
+    var btime = bday.getTime();
 
-        if ((btime - currenttime) < 0) {
+    if ((btime - currenttime) < 0) {
 
 
-            bday.setFullYear(today.getFullYear());
+        bday.setFullYear(today.getFullYear());
 
-            if ((bday.getTime() - today.getTime()) < 0) {
-                bday.setFullYear(bday.getFullYear() + 1);
-            }
-
+        if ((bday.getTime() - today.getTime()) < 0) {
+            bday.setFullYear(bday.getFullYear() + 1);
         }
 
-        var daysuntil = Math.floor((bday.getTime() / 86400000) - (today.getTime() / 86400000));
-
-
-        document.write(daysuntil, " days until my birthday!");
-
-
     }
+
+    var daysuntil = Math.floor((bday.getTime() / 86400000) - (today.getTime() / 86400000));
+
+
+    document.write(daysuntil, " days until my birthday!");
+
+
+}
