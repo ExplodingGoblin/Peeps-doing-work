@@ -4,25 +4,25 @@ function greeting() {
     var day = d.getDay();
     if (hour < 10) {
         if(day == 0 || day == 6) {
-            return "Go back to sleep, it's the weekend!";
+            document.write("Go back to sleep, it's the weekend!");
         } else if (day == 1) {
-            return "Ugh, it's Monday monring!";
+            document.write("Ugh, it's Monday monring!");
         } else {
-            return "Good morning!";
+            document.write("Good morning!");
         }
     }
     if (hour > 10 && hour < 16) {
         if (day == 0 || day == 6) {
-            return "Hope you are having a great weekend!";
+            document.write("Hope you are having a great weekend!");
         } else {
-            return "Good day!";
+            document.write("Good day!");
         }
     }
     if ( hour > 16) {
         if (day == 0) {
-            return "Enjoy your evening...tomorrow is Monday!";
+            document.write("Enjoy your evening...tomorrow is Monday!");
         } else {
-            return "Good evening!";
+            document.write("Good evening!");
         }
     }
 }
@@ -74,7 +74,7 @@ function dateMessage() {
         var daysuntil = Math.floor((bday.getTime() / 86400000) - (today.getTime() / 86400000));
 
 
-        document.write(daysuntil);
+        document.write(daysuntil, " until my birthday!");
 
 
     }
