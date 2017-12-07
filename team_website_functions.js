@@ -74,7 +74,7 @@ function dateMessage() {
         var daysuntil = Math.floor((bday.getTime() / 86400000) - (today.getTime() / 86400000));
 
 
-        document.write(daysuntil, " until my birthday!");
+        document.write(daysuntil, " days until my birthday!");
 
 
     }
