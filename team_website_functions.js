@@ -9,6 +9,7 @@ function greeting() {
         } else {
             return "Good morning!";
         }
+    }
     if (hour > 10 && hour < 16) {
         if (day == 0 || day == 6) {
             return "Hope you are having a great weekend!";
@@ -18,9 +19,12 @@ function greeting() {
     }
     if ( hour > 16) {
         if (day == 0) {
-
+            return "Enjoy your evening...tomorrow is Monday!";
+        } else {
+            return "Good evening!";
         }
     }
+
 
 }
 
