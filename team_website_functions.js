@@ -50,41 +50,28 @@ function dateMessage() {
     document.write(dayNumber, ending); //displays day
 }
 
-function birthdayCountDown(birthdate) {
+    function birthdayCountDown(bdate) {
 
-    var today = new Date();
-    var birthday = new Date(birthdate);
-    var currenttime = today.getTime();
-    var birthtime = birthday.getTime();
+        var today = new Date();
+        var bday = new Date(bdate);
+        var currenttime = today.getTime();
+        var btime = bday.getTime();
 
-    if ((birthtime - currenttime) < 0) {
+        if ((btime - currenttime) < 0) {
 
 
-        birthday.setFullYear(today.getFullYear());
+            bday.setFullYear(today.getFullYear());
 
-        if ((birthday.getTime() - today.getTime()) < 0) {
-            birthday.setFullYear(birthday.getFullYear() + 1);
+            if ((bday.getTime() - today.getTime()) < 0) {
+                bday.setFullYear(bday.getFullYear() + 1);
+            }
+
         }
 
+        var daysuntil = Math.floor((bday.getTime() / 86400000) - (today.getTime() / 86400000));
+
+
+        document.write(daysuntil);
+
+
     }
-
-    var daysuntil = Math.floor((birthday.getTime() / 86400000) - (today.getTime() / 86400000));
-
-
-    document.write(daysuntil);
-
-}
-
-function calculateAge (birthDate) {
-    birthDate = new Date(birthDate);
-    var otherDate = new Date();
-
-    var years = (otherDate.getFullYear() - birthDate.getFullYear());
-
-    if (otherDate.getMonth() < birthDate.getMonth() ||
-        otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
-        years--;
-    }
-
-    document.write(years);
-}
