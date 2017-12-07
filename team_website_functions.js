@@ -1,4 +1,5 @@
 function greeting() {
+    var d = new Date();
     var hour = d.getHours();
     var day = d.getDay();
     if (hour < 10) {
@@ -24,8 +25,6 @@ function greeting() {
             return "Good evening!";
         }
     }
-
-
 }
 
 function dateMessage() {
